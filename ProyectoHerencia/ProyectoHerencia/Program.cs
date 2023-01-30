@@ -5,15 +5,40 @@ Caballo babieca = new Caballo("juanchota");
 Humano juan = new Humano("larga");
 Gorila copito = new Gorila("pila");
 
-babieca.Galopar();
-juan.Pensar();
-copito.Trepar();
+//babieca.Galopar();
+//juan.Pensar();
+//copito.Trepar();
 
-babieca.Respirar();
+//babieca.Respirar();
 
-babieca.getNombre();
-juan.getNombre();
-copito.getNombre();
+//babieca.getNombre();
+//juan.getNombre();
+//copito.getNombre();
+
+
+Mamiferos animal = new Caballo("pedro");
+Mamiferos persona = new Humano(animal.GetType().ToString());
+Mamiferos Animlaito = new Mamiferos("bucefalo");
+
+animal.getNombre();
+animal = Animlaito;
+
+animal.getNombre();
+
+persona.getNombre();
+
+
+Object miAnimal = new Caballo("obshet");
+
+miAnimal.ToString(); // no escribe nada
+
+Mamiferos[] almacenAnimales = new Mamiferos[3];
+
+almacenAnimales[0] = animal;
+almacenAnimales[1] = Animlaito;
+almacenAnimales[2] = persona;
+
+almacenAnimales[1].getNombre();
 
 
 Console.ReadLine();
